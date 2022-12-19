@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #023e8a;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+img {
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 500px;
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 7rem;
+}
+
+.title {
+    color: #ffb627;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.margin {
+    margin: 1rem;
+}
+
+.iconStudy {
+    color: #ffd500;
+    font-size: 15rem;
+}
+
+.iconStudy:hover {
+    color: #0496ff;
+}
+
+/* petition asignautres */
+.gridTemplate {
+    display: grid;
+    grid-template-columns: repeat(1, 0fr);
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 3rem;
+}
+
+.names {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: #ffb628;
+    justify-content: center;
+}
+
+.inputSize {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: 700;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.5rem;
+    cursor: pointer;
+    color: #ffb627;
+    background-color: #ff6d00;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #a72608;
+    background-color: #788585;
+}
+
+.par {
+    font-size: 1.5rem;
+    color: #ffb627;
+}
+
+.para {
+    font-size: 2.5rem;
+    color: #ffb627;
+    margin-top: 2rem;
+}
+
+.list {
+    list-style: none;
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #f5f1ed;
+}
+
+/* for canvas styles */
+#sig-canvas {
+    border: 2px dotted #cccccc;
+    border-radius: 15px;
+    cursor: crosshair;
+}
+
+/* HEADER */
+.headerNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffb628;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    color: #a72608;
+    font-size: 1.6rem;
+}
+
+a {    
+    text-decoration: none;
+    color: #ffb628;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #788585;
+}
+
+.listNames {
+    display: flex;
+    gap: 5.5rem;
+    font-size: 1.5rem;
+    color: #ffb628;
+    justify-content: flex-end;
+    align-items: center;    
+    line-height: 3rem;
+}
+
+.nameLink {
+    flex: 1;
+}
+
+.age {
+    width: 50px;
+}
+
+.city {
+    width: 250px;
+}

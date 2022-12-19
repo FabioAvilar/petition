@@ -1,0 +1,14 @@
+{{> headerLog}}
+{{#signer}}
+<h1 class="title base">Thank you for your signature <strong>{{ first_name }} {{ last_name }}</strong></h1>
+<p class="base">
+    <img src="{{ signature }}" alt="{{ first_name }} {{ last_name }}">
+</p>
+<form action="/thankyou" method="POST">
+    <button class="btn">DELETE SIGNATURE</button>
+</form>
+
+{{/signer}}
+
+<a class="base names" href="/signers">See all {{signers.length}} signers</a>
+<a class="base names" href="/profile/edit">Update Profile</a>

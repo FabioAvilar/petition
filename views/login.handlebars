@@ -1,0 +1,19 @@
+{{> header}}
+<div class="base">
+    <div>
+        {{#if error}}
+        <h2>{{error}}</h2>
+        {{/if}}
+    </div>
+    <div>
+        <form class="gridTemplate" action="/login" method="POST">
+            <label class="names" for="email">Email</label>
+            <input class="inputSize" type="email" name="email" id="email" placeholder="email"><br>
+            <label class="names" for="password">Password</label>
+            <input class="inputSize" type="password" name="password" id="password" placeholder="password"><br>
+            <input type="hidden" name="_csrf" value="{{csrfToken}}"><br>
+            <button class="btn base" type="submit">Login</button>
+            <a class="btn base" href="/register">Register</a>
+        </form>
+    </div>
+</div>

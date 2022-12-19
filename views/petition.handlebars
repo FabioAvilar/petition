@@ -1,0 +1,40 @@
+<body>
+    {{> headerLog}}
+    <section class="base">
+        <h1 class="title">Sign our petition for a world with more possibilities
+            to study.</h1>
+
+        <i class="fa-solid fa-graduation-cap iconStudy"></i>
+    </section>
+
+    <section class="base">
+        <form action="/petition" method="POST">
+            <div class="base">
+                <input
+                    type="hidden"
+                    name="signature"
+                    placeholder="signatures.signature"
+                    id="signature"
+                    required
+                />
+                <canvas id="sig-canvas" width="620" height="160"></canvas>
+                <div class="baseIcon">
+                    <p class="par">Sign Here</p>
+                    <i class="fa-solid fa-signature par"></i>
+                </div>
+            </div>
+
+            <div class="base">
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                    id="sig-submitBtn"
+                >Submit</button>
+                <button class="btn btn-default" id="sig-clearBtn">Clear
+                    Signature</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="/canvas.js"></script>
+</body>

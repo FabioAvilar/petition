@@ -1,0 +1,18 @@
+<ul class="list">
+    {{#each signers }}
+    <li>
+        <p class="listNames">🏫 {{#if homepage}}
+            <a class="nameLink" target="_blank" href={{homepage}}>{{first_name}} {{last_name}}</a>
+            {{else}}
+            <a class="nameLink" href="#">{{first_name}} {{last_name}}</a>
+            {{/if}}
+            {{#if age}}
+            <span class="age">{{age}}</span>
+            {{/if}}
+            {{#if city}}
+            <a class="city" href="/signers/{{city}}">{{city}}</a>
+            {{/if}}
+        </p>
+    </li>
+    {{/each}}
+</ul>
